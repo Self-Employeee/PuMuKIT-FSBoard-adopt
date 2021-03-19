@@ -2,7 +2,7 @@ FROM teltek/pumukit-base:4.x
 
 # default build for production
 ARG APP_ENV=prod
-ARG PHP_MEMORY_LIMIT=512M
+ARG PHP_MEMORY_LIMIT=2048M
 
 # copy the code into the docker
 COPY --chown=www-data:www-data . ./
